@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST</title>
+  </head>
+
+  <body>
+    <div id="slider">
+      <div id="polosa">
+        <img src="img/1.jpg" alt="kote">
+        <img src="img/2.jpg" alt="kote">
+        <img src="img/3.jpg" alt="kote">
+        <img src="img/4.jpg" alt="kote">
+        <img src="img/5.jpg" alt="kote">
+      </div>
+      <button class="btn_prev btn">&#9668;</button>
+      <button class="btn_next btn">&#9658;</button>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    #slider {
+      width: 800px;
+      overflow: hidden;
+      position: relative;
+      height: 600px;
+      border: 3px solid grey;
+    }
+    #polosa {
+      background: pink;
+      width: 4000px;
+      display: flex;
+      position: relative;
+      left: 0;
+      transition: all ease 1s;
+    }
+
+    .btn {
+      font-size: 32px;
+      color: #000;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      border-radius: 50%;
+      outline: none;
+    }
+    .btn_prev {
+      left: 0;
+    }
+
+    .btn_next {
+      right: 0;
+    }
+    
+    </style>
+
+    <script src="main.js"></script>
+  </body>
+
+</html>
