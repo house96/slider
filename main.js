@@ -4,7 +4,7 @@ var prev = 0;
 var polosa = document.getElementById('polosa');
 btnPrev.addEventListener('click', function(){
   prev = prev + 800;
-  if ( prev  >= 0) {
+  if ( prev  > 0) {
     prev =  -3200;
     }
   polosa.style.left = prev +"px";
